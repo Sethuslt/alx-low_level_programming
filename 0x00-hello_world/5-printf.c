@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main - Entry
+ * main - Entry point
+ * Description: print a line ending with a new line using printf
  *
  * Return: Always 0
  */

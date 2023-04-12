@@ -19,4 +19,7 @@ void free_grid(int **grid, int height)
 	}
 	free(grid);
 }
-
+int main()
+{
+    return 0;
+}

@@ -2,8 +2,8 @@
 #include <stdlib.h>
 /**
  * *string_nconcat - concentrates on bytes of a string to another str
- * @n: number of bytes from s2 to concentte to s1
  * @s1: the atring to append to
+ * @n: number of bytes from s2 to concentte to s1
  * @s2: the string to concentrate from
  *
  * Return: pointer to the resulting string

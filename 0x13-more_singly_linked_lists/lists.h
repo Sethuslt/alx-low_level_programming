@@ -1,6 +1,6 @@
 #ifndef LISTS_H
 #define LISTS_H
-
+#include <stdio.h>
 /**
  * struct listint_s - Is the Singly Linked List.
  * @n: Is The Interger

@@ -32,7 +32,7 @@ void check_elf(unsigned char *e_ident)
 
 	for (i = 0; i < 4 ; i++)
 	{
-		if (e_idnet[i] != 127 &&
+		if (e_ident[i] != 127 &&
 		e_ident[i] != 'E' &&
 		e_ident[i] != 'L' &&
 		e_ident[i] != 'F')
@@ -44,9 +44,7 @@ void check_elf(unsigned char *e_ident)
 }
 /**
  * print_magic - this prints on ELF header the magic number
- * @e_ident: this refers to a pointer to an array that has 
- * ELF magic numbers
- *
+ * @e_ident: this refers to a pointer of array 
  * Description: the magic Numbers are separated by spaces
  *
  */
@@ -58,7 +56,7 @@ void print_magic(unsigned char *e_ident)
 
 	for (i = 0; i < EI_NIDENT; i++)
 	{
-		ptintf("%02x", e_ident[i]);
+		printf("%02x", e_ident[i]);
 
 		if (i == EI_NIDENT - 1)
 			printf("\n");
@@ -128,7 +126,7 @@ void print_version(unsigned char *e_ident)
 		case EV_CURRENT:
 			printf(" (current)\n");
 			break;
-		defaut:
+		default:
 			printf("\n");
 			break;
 	}
